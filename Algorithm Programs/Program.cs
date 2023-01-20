@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to Algorithm Programs!");
             Console.WriteLine("1 Permutation Using Recursion\n2 Binary Search the word from wordlist" +
-                "\n3 Insertion Sort");
+                "\n3 Insertion Sort\n4 Bubble Sort");
             Console.WriteLine("Enter the option");
             int num = Convert.ToInt32(Console.ReadLine());
             switch (num)
@@ -28,6 +28,11 @@
                     int[] arr = { 10, 2, 14, 3, 1, 5, 9 };
                     insertionSort.Sort(arr);
                     insertionSort.PrintArray(arr);
+                    break;
+                case 4:
+                    int[] arr1 = { 10, 2, 14, 3, 1, 5, 9 };
+                    BubbleSort.BubbleSortInArray(arr1);
+                    BubbleSort.PrintArray(arr1);
                     break;
 
                 default:
