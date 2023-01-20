@@ -5,7 +5,8 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Algorithm Programs!");
-            Console.WriteLine("1 Permutation Using Recursion\n2 Binary Search the word from wordlist");
+            Console.WriteLine("1 Permutation Using Recursion\n2 Binary Search the word from wordlist" +
+                "\n3 Insertion Sort");
             Console.WriteLine("Enter the option");
             int num = Convert.ToInt32(Console.ReadLine());
             switch (num)
@@ -21,6 +22,12 @@
                     List<string> words = new List<string>(txtpath.Split());
                     words.Sort();
                     BinarySearch.BinarySearchWord(words);
+                    break;
+                case 3:
+                    InsertionSort insertionSort = new InsertionSort();
+                    int[] arr = { 10, 2, 14, 3, 1, 5, 9 };
+                    insertionSort.Sort(arr);
+                    insertionSort.PrintArray(arr);
                     break;
 
                 default:
