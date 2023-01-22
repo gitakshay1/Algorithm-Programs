@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to Algorithm Programs!");
             Console.WriteLine("1 Permutation Using Recursion\n2 Binary Search the word from wordlist" +
-                "\n3 Insertion Sort\n4 Bubble Sort\n5 Merge Sort");
+                "\n3 Insertion Sort\n4 Bubble Sort\n5 Merge Sort\n6 Anagram");
             Console.WriteLine("Enter the option");
             int num = Convert.ToInt32(Console.ReadLine());
             switch (num)
@@ -38,6 +38,9 @@
                     int[] arr2 = { 32, 12, 9, 65, 24, 5 };
                     MergeSort.Sort(arr2, 0, arr2.Length - 1);
                     MergeSort.PrintArray(arr2);
+                    break;
+                case 6:
+                    Anagram.FindAnagram();
                     break;
 
                 default:
