@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome to Algorithm Programs!");
             Console.WriteLine("1 Permutation Using Recursion\n2 Binary Search the word from wordlist" +
-                "\n3 Insertion Sort\n4 Bubble Sort\n5 Merge Sort\n6 Anagram");
+                "\n3 Insertion Sort\n4 Bubble Sort\n5 Merge Sort\n6 Anagram\n7 Prime Number in range ");
             Console.WriteLine("Enter the option");
             int num = Convert.ToInt32(Console.ReadLine());
             switch (num)
@@ -41,6 +41,11 @@
                     break;
                 case 6:
                     Anagram.FindAnagram();
+                    break;
+                case 7:
+                    Console.WriteLine("The prime numbers are : ");
+                    PrimeNumInRange primeNum = new PrimeNumInRange();
+                    primeNum.FindPrime();
                     break;
 
                 default:
